@@ -36,12 +36,5 @@ namespace Activity_20_5_2024
 
         }
 
-        public void printUpdatedQueue()
-        {
-            foreach(var item in queue)
-            {
-                Console.Write(item);
-            }
-        }
     }
 }

@@ -27,21 +27,18 @@ namespace Activity_20_5_2024
 
         public void printAll()
         {
-            foreach (var item in dictionary)
+            foreach (var key in dictionary.Keys)
             {
-                Console.WriteLine(item);
+                Console.WriteLine($"{key}: {dictionary[key]} ");
             }
         }
 
-        public void printDictionary()
-        {
-            
-            //dictionary.GetEnumerator().MoveNext();
-        }
 
         public void updateStudent()
         {
-            dictionary.);
+            dictionary["Carlos"] = 10;
+            dictionary.Remove("Miguel");
         }
+
     }
 }
