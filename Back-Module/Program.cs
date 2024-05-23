@@ -2,6 +2,18 @@
 //using Activity_20_5_2024;
 //using Back_Module;
 
+using SimpleTextProcessingApplication;
+
+Console.WriteLine("Third activity");
+
+string textFile = @"D:\UNIVERSIDAD\Formación_Desarrollo_De_Software\6_Backend\code\SimpleTextProcessingApplication\SimpleTextProcessingApplication\TestFile.txt";
+
+string text = textFile.readText();
+
+TextProcessor processor = new TextProcessor(text);
+
+processor.ProcessText(text);
+
 //Console.WriteLine("Lists");
 
 //Lists integerList = new Lists();
@@ -75,29 +87,30 @@
 // Second Activity
 
 
-int Add(int a, int b)
-{
-    Console.WriteLine(a + b);
-    return a + b;
-}
+//int Add(int a, int b)
+//{
+//    Console.WriteLine(a + b);
+//    return a + b;
+//}
 
-int Subtract(int a, int b)
-{
-    Console.WriteLine(a - b);
-    return a - b;
-}
+//int Subtract(int a, int b)
+//{
+//    Console.WriteLine(a - b);
+//    return a - b;
+//}
 
-MathOperation addOperation = Add;
-MathOperation substractOperation = Subtract;
+//MathOperation addOperation = Add;
+//MathOperation substractOperation = Subtract;
 
-//Console.WriteLine(addOperation(10, 11));
+////Console.WriteLine(addOperation(10, 11));
 
-MathOperation MulticasDelegate = addOperation + substractOperation;
+//MathOperation MulticasDelegate = addOperation + substractOperation;
 
-int resul = MulticasDelegate(14, 12);
-
-
-//Console.Write(resul);
+//int resul = MulticasDelegate(14, 12);
 
 
-public delegate int MathOperation(int a, int b);
+////Console.Write(resul);
+
+
+//public delegate int MathOperation(int a, int b);
+
